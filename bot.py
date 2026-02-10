@@ -91,7 +91,7 @@ def create_embed():
                 "inline": False
             },
             {
-                "name": "⏳ Обратный отсчет (LIVE)",
+                "name": "⏳ ubiq respawns in ...",
                 "value": f"```fix\n{days}д {hours:02d}:{minutes:02d}:{seconds:02d}```",
                 "inline": False
             },
@@ -150,6 +150,7 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
 
         print("\n🛑 Мониторинг остановлен. Служба продолжается!")
+
 
 
 
