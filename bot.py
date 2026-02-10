@@ -82,26 +82,26 @@ def create_embed():
 
     # Формируем итоговую плитку (без футера)
     embed = {
-        "title": f":dude: ДембелёвОчка: {USER_NAME}",
+        "title": f"🎖️ ДембелёвОчка: {USER_NAME}",
         "color": color,
         "fields": [
             {
-                "name": ":your: Общий прогресс",
+                "name": "📊 Общий прогресс",
                 "value": f"{get_progress_bar(percent)} **{percent:.4f}%**",
                 "inline": False
             },
             {
-                "name": ":4165_Hyped_ZeroTwo: Обратный отсчет (LIVE)",
+                "name": "⏳ Обратный отсчет (LIVE)",
                 "value": f"```fix\n{days}д {hours:02d}:{minutes:02d}:{seconds:02d}```",
                 "inline": False
             },
             {
-                "name": ":O_: Ключевые даты",
+                "name": "📅 Ключевые даты",
                 "value": f"**Старт:** {START_DATE.strftime('%d.%m.%Y')}\n**Дембель:** {END_DATE.strftime('%d.%m.%Y')}",
                 "inline": True
             },
             {
-                "name": ":smiling_imp: Статистика",
+                "name": "🌓 Статистика",
                 "value": f"**Прошло:** {served_duration.days} дн.\n**Осталось:** {remaining_duration.days} дн.",
                 "inline": True
             }
@@ -150,5 +150,6 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
 
         print("\n🛑 Мониторинг остановлен. Служба продолжается!")
+
 
 
